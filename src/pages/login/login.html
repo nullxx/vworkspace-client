@@ -1,0 +1,269 @@
+<html>
+  <head>
+    <style>
+      .spinner {
+        font-size: 30px;
+        position: relative;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+      }
+
+      .spinner div {
+        position: absolute;
+        left: 0.4629em;
+        bottom: 0;
+        width: 0.074em;
+        height: 0.2777em;
+        border-radius: 0.5em;
+        background-color: transparent;
+        -webkit-transform-origin: center -0.2222em;
+        -ms-transform-origin: center -0.2222em;
+        transform-origin: center -0.2222em;
+        -webkit-animation: spinner-fade 1s infinite linear;
+        animation: spinner-fade 1s infinite linear;
+      }
+
+      .spinner div:nth-child(1) {
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      .spinner div:nth-child(2) {
+        -webkit-animation-delay: 0.083s;
+        animation-delay: 0.083s;
+        -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        transform: rotate(30deg);
+      }
+
+      .spinner div:nth-child(3) {
+        -webkit-animation-delay: 0.166s;
+        animation-delay: 0.166s;
+        -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+        transform: rotate(60deg);
+      }
+
+      .spinner div:nth-child(4) {
+        -webkit-animation-delay: 0.249s;
+        animation-delay: 0.249s;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+
+      .spinner div:nth-child(5) {
+        -webkit-animation-delay: 0.332s;
+        animation-delay: 0.332s;
+        -webkit-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+        transform: rotate(120deg);
+      }
+
+      .spinner div:nth-child(6) {
+        -webkit-animation-delay: 0.415s;
+        animation-delay: 0.415s;
+        -webkit-transform: rotate(150deg);
+        -ms-transform: rotate(150deg);
+        transform: rotate(150deg);
+      }
+
+      .spinner div:nth-child(7) {
+        -webkit-animation-delay: 0.498s;
+        animation-delay: 0.498s;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+
+      .spinner div:nth-child(8) {
+        -webkit-animation-delay: 0.581s;
+        animation-delay: 0.581s;
+        -webkit-transform: rotate(210deg);
+        -ms-transform: rotate(210deg);
+        transform: rotate(210deg);
+      }
+
+      .spinner div:nth-child(9) {
+        -webkit-animation-delay: 0.664s;
+        animation-delay: 0.664s;
+        -webkit-transform: rotate(240deg);
+        -ms-transform: rotate(240deg);
+        transform: rotate(240deg);
+      }
+
+      .spinner div:nth-child(10) {
+        -webkit-animation-delay: 0.747s;
+        animation-delay: 0.747s;
+        -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+      }
+
+      .spinner div:nth-child(11) {
+        -webkit-animation-delay: 0.83s;
+        animation-delay: 0.83s;
+        -webkit-transform: rotate(300deg);
+        -ms-transform: rotate(300deg);
+        transform: rotate(300deg);
+      }
+
+      .spinner div:nth-child(12) {
+        -webkit-animation-delay: 0.913s;
+        animation-delay: 0.913s;
+        -webkit-transform: rotate(330deg);
+        -ms-transform: rotate(330deg);
+        transform: rotate(330deg);
+      }
+
+      @-webkit-keyframes spinner-fade {
+        0% {
+          background-color: #69717d;
+        }
+
+        100% {
+          background-color: transparent;
+        }
+      }
+
+      @keyframes spinner-fade {
+        0% {
+          background-color: #69717d;
+        }
+
+        100% {
+          background-color: transparent;
+        }
+      }
+
+      .checkbox-input {
+        width: unset;
+      }
+    </style>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #3498db;
+        font-family: "Arial", sans-serif;
+        padding: 50px;
+      }
+
+      .container {
+        margin: 20px auto;
+        padding: 10px;
+        width: 300px;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+
+      h1 {
+        width: 70%;
+        color: #777;
+        font-size: 32px;
+        margin: 28px auto;
+        margin-bottom: 20px;
+        text-align: center;
+        /*padding-top: 40px;*/
+      }
+
+      form {
+        /*padding: 15px;*/
+        text-align: center;
+      }
+
+      input {
+        padding: 12px 0;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        border: 2px solid transparent;
+        text-align: center;
+        width: 90%;
+        font-size: 16px;
+        transition: border 0.2s, background-color 0.2s;
+      }
+
+      form .field {
+        background-color: #ecf0f1;
+      }
+
+      form .field:focus {
+        border: 2px solid #3498db;
+      }
+
+      form .btn {
+        background-color: #3498db;
+        color: #fff;
+        line-height: 25px;
+        cursor: pointer;
+      }
+
+      form .btn:hover,
+      form .btn:active {
+        background-color: #1f78b4;
+        border: 2px solid #1f78b4;
+      }
+
+      .pass-link {
+        text-align: center;
+      }
+
+      .pass-link a:link,
+      .pass-link a:visited {
+        font-size: 12px;
+        color: #777;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+
+      <form action="#" method="POST" id="login-form">
+        <input id="email" type="text" placeholder="email" class="field" />
+        <input
+          id="password"
+          type="password"
+          placeholder="password"
+          class="field"
+        />
+        <input
+          id="domain"
+          type="text"
+          placeholder="myapps.deusto.es"
+          class="field"
+        />
+        <div class="scheme">
+          <input class="checkbox-input" type="checkbox" id="useSSL" value="https" />
+          <label for="useSSL">https</label>
+        </div>
+
+        <div class="spinner" style="display: none" id="spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <input type="submit" value="login" class="btn" />
+      </form>
+    </div>
+    <script defer src="./login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

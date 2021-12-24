@@ -1,0 +1,22 @@
+{
+  "name": "vworkspaceClient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . --overwrite --icon packaging/assets/icon/icon.icns --out out --all --asar"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "*",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "electron": "^16.0.5",
+    "electron-packager": "^15.4.0"
+  }
+}
