@@ -1,10 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-const nativeImage = require('electron').nativeImage
-
-const electron = require('electron');
-const { ipcMain } = require('electron');
-const { app, BrowserWindow, session } = electron;
+const { app, BrowserWindow, session, ipcMain, nativeImage } = require('electron');
 const request = require('request');
 const path = require('path');
 
@@ -98,9 +94,8 @@ async function launchFlow(username, password) {
 
     win.webContents.send('select-application', apps);
 
-    ipcMain.on('selected-application', (event, selectedApplication) => {
+    ipcMain.on('selected-application', (_, selectedApplication) => {
         launchApplication(selectedApplication, cookies);
-        ipcMain.emit('launching-application', selectedApplication);
     });
 }
 

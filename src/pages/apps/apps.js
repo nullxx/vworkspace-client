@@ -1,14 +1,8 @@
-
 const { ipcRenderer } = require('electron');
 
 ipcRenderer.on('select-application', async (_, applications) => {
     const selectedApp = await selectApplication(applications);
     ipcRenderer.sendSync('selected-application', selectedApp);
-});
-
-ipcRenderer.on('launching-application', async (app) => {
-    const id = 'spinner-' + app.appName;
-    document.getElementById(id).style.display = 'block';
 });
 
 async function selectApplication(applications) {
